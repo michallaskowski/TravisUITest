@@ -1,0 +1,14 @@
+PODS:
+  - TravisUITest (0.1.0)
+
+DEPENDENCIES:
+  - TravisUITest (from `../`)
+
+EXTERNAL SOURCES:
+  TravisUITest:
+    :path: ../
+
+SPEC CHECKSUMS:
+  TravisUITest: 01e7ca2227a08e8a5fc676b38fa10b4c3874e0af
+
+COCOAPODS: 0.39.0

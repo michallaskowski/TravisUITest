@@ -15,6 +15,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		A4CBD8137335EFB54FBFF07C /* Pods_TravisUITest_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F00E78615629C5B151F7B0 /* Pods_TravisUITest_Example.framework */; };
+		C19594441BD6D63D008D80C0 /* TravisUITest_UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C19594431BD6D63D008D80C0 /* TravisUITest_UITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +25,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
 			remoteInfo = TravisUITest;
+		};
+		C19594461BD6D63D008D80C0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 607FACC81AFB9204008FA782 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 607FACCF1AFB9204008FA782;
+			remoteInfo = TravisUITest_Example;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -44,6 +52,9 @@
 		A246A9272A8D34EA75F54073 /* Pods_TravisUITest_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravisUITest_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A2D0C52A6AB2B89AE35AD9 /* Pods-TravisUITest_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravisUITest_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravisUITest_Example/Pods-TravisUITest_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		BD91107BBBC1E2B160DE791E /* Pods-TravisUITest_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravisUITest_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TravisUITest_Tests/Pods-TravisUITest_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C19594411BD6D63D008D80C0 /* TravisUITest_UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TravisUITest_UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C19594431BD6D63D008D80C0 /* TravisUITest_UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravisUITest_UITests.swift; sourceTree = "<group>"; };
+		C19594451BD6D63D008D80C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE4803A9A7CF4E5D4462117C /* TravisUITest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TravisUITest.podspec; path = ../TravisUITest.podspec; sourceTree = "<group>"; };
 		D0D78105A9D6516721C3D11C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F3F00E78615629C5B151F7B0 /* Pods_TravisUITest_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TravisUITest_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +74,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				048820333A891D795A12B386 /* Pods_TravisUITest_Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C195943E1BD6D63D008D80C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +104,7 @@
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for TravisUITest */,
 				607FACE81AFB9204008FA782 /* Tests */,
+				C19594421BD6D63D008D80C0 /* UITests */,
 				607FACD11AFB9204008FA782 /* Products */,
 				053920F78F57841E2454CD6C /* Pods */,
 				615E61E7CDF0A75F848AE874 /* Frameworks */,
@@ -97,6 +116,7 @@
 			children = (
 				607FACD01AFB9204008FA782 /* TravisUITest_Example.app */,
 				607FACE51AFB9204008FA782 /* Tests.xctest */,
+				C19594411BD6D63D008D80C0 /* TravisUITest_UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,6 +179,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C19594421BD6D63D008D80C0 /* UITests */ = {
+			isa = PBXGroup;
+			children = (
+				C19594431BD6D63D008D80C0 /* TravisUITest_UITests.swift */,
+				C19594451BD6D63D008D80C0 /* Info.plist */,
+			);
+			name = UITests;
+			path = TravisUITest_UITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -203,12 +233,31 @@
 			productReference = 607FACE51AFB9204008FA782 /* Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		C19594401BD6D63D008D80C0 /* TravisUITest_UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C19594481BD6D63D008D80C0 /* Build configuration list for PBXNativeTarget "TravisUITest_UITests" */;
+			buildPhases = (
+				C195943D1BD6D63D008D80C0 /* Sources */,
+				C195943E1BD6D63D008D80C0 /* Frameworks */,
+				C195943F1BD6D63D008D80C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C19594471BD6D63D008D80C0 /* PBXTargetDependency */,
+			);
+			name = TravisUITest_UITests;
+			productName = TravisUITest_UITests;
+			productReference = C19594411BD6D63D008D80C0 /* TravisUITest_UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		607FACC81AFB9204008FA782 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
@@ -217,6 +266,10 @@
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 607FACCF1AFB9204008FA782;
+					};
+					C19594401BD6D63D008D80C0 = {
+						CreatedOnToolsVersion = 7.0.1;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -236,6 +289,7 @@
 			targets = (
 				607FACCF1AFB9204008FA782 /* TravisUITest_Example */,
 				607FACE41AFB9204008FA782 /* TravisUITest_Tests */,
+				C19594401BD6D63D008D80C0 /* TravisUITest_UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +306,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		607FACE31AFB9204008FA782 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C195943F1BD6D63D008D80C0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -371,6 +432,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C195943D1BD6D63D008D80C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C19594441BD6D63D008D80C0 /* TravisUITest_UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -378,6 +447,11 @@
 			isa = PBXTargetDependency;
 			target = 607FACCF1AFB9204008FA782 /* TravisUITest_Example */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
+		};
+		C19594471BD6D63D008D80C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 607FACCF1AFB9204008FA782 /* TravisUITest_Example */;
+			targetProxy = C19594461BD6D63D008D80C0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -542,6 +616,34 @@
 			};
 			name = Release;
 		};
+		C19594491BD6D63D008D80C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = TravisUITest_UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.michallaskowski.TravisUITest-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TravisUITest_Example;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C195944A1BD6D63D008D80C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TravisUITest_UITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.michallaskowski.TravisUITest-UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TravisUITest_Example;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -571,6 +673,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		C19594481BD6D63D008D80C0 /* Build configuration list for PBXNativeTarget "TravisUITest_UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C19594491BD6D63D008D80C0 /* Debug */,
+				C195944A1BD6D63D008D80C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
